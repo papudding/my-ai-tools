@@ -7,6 +7,18 @@ Record my selection choices
 npm install -g opencode-ai
 ```
 
+## [opencode-notify](https://github.com/papudding/opencode-notify)
+OpenCode 的 Bark (iOS) 推送通知插件，当智能体需要权限确认、提问或输出完成时推送到手机。
+```bash
+mkdir -p ~/.config/opencode/plugins
+```
+```bash
+cp notify.ts ~/.config/opencode/plugins/notify.ts
+```
+```bash
+cp notify.sh ~/.config/opencode/notify.sh && chmod +x ~/.config/opencode/notify.sh
+```
+
 ## [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)
 面向 OpenCode/Codex 的多智能体编排插件，支持多模型协作、团队模式和自动化开发工作流。
 ```bash
