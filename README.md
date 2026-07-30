@@ -74,7 +74,22 @@ herdr --remote remote-host
 cargo install fnm
 ```
 ```bash
+export FNM_NODE_DIST_MIRROR=https://mirrors.ustc.edu.cn/node/
+```
+```bash
 fnm i 24
+```
+
+## [oc-stats](https://github.com/sdzyff/oc-stats)
+OpenCode 会话统计分析工具，多 AI Provider 费用与 Token 消耗一目了然。完全本地运行，隐私保护。
+```bash
+pip install oc-stats
+```
+```bash
+oc-stats                    # 查看当前项目汇总统计
+oc-stats --all              # 查看所有项目汇总
+oc-stats-web                # 启动 Web 仪表盘
+oc-stats-tray               # 启动 macOS 菜单栏托盘
 ```
 
 ## Skills
@@ -83,6 +98,9 @@ fnm i 24
 可恢复的长任务工作流与 Skill 平台，支持 Native/Classic 双模式 Spec 驱动开发和 Skill 创建、评估、发布。
 ```bash
 npm install -g @rpamis/comet
+```
+```bash
+export OPENSPEC_TELEMETRY=0
 ```
 ```bash
 comet init
@@ -98,3 +116,8 @@ npx skills add alchaincyf/huashu-design
 Andrej Karpathy 风格的 AI 编程技能集，提供简洁直接的代码建议和解释。
 
 内容直接写入 AGENTS.md
+
+### [grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md)
+严格的面试式 Skill，通过连续提问来完善你的计划或设计方案。
+
+使用方式：`/grill-me`
