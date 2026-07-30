@@ -96,6 +96,5 @@ npx skills add alchaincyf/huashu-design
 
 ### [andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)
 Andrej Karpathy 风格的 AI 编程技能集，提供简洁直接的代码建议和解释。
-```bash
-npx skills add forrestchang/andrej-karpathy-skills
-```
+
+内容直接写入 AGENTS.md
