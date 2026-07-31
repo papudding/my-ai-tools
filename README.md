@@ -80,16 +80,15 @@ export FNM_NODE_DIST_MIRROR=https://mirrors.ustc.edu.cn/node/
 fnm i 24
 ```
 
-## [oc-stats](https://github.com/sdzyff/oc-stats)
-OpenCode 会话统计分析工具，多 AI Provider 费用与 Token 消耗一目了然。完全本地运行，隐私保护。
+## [oc-stats](https://github.com/Cateds/opencode-stats)
+终端下的 OpenCode 使用统计仪表板，显示 Token 消耗、成本估算、模型和提供商分布及 365 天活动热力图。
 ```bash
-pip install oc-stats
+cargo install opencode-stats
 ```
 ```bash
-oc-stats                    # 查看当前项目汇总统计
-oc-stats --all              # 查看所有项目汇总
-oc-stats-web                # 启动 Web 仪表盘
-oc-stats-tray               # 启动 macOS 菜单栏托盘
+oc-stats                    # 查看使用统计
+oc-stats --theme dark       # 指定深色主题
+oc-stats --json export.json # 加载 JSON 导出文件
 ```
 
 ## Skills
