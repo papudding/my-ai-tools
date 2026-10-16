@@ -7,6 +7,51 @@ Record my selection choices
 npm install -g opencode-ai
 ```
 
+## [pi](https://pi.dev)
+开源 AI 编程智能体，支持插件扩展、权限策略与 MCP 适配。
+```bash
+curl -fsSL https://pi.dev/install.sh | sh
+```
+```bash
+npm install -g --ignore-scripts @earendil-works/pi-coding-agent
+```
+
+安装插件：
+```bash
+pi install npm:pi-permission-classifier
+```
+```bash
+pi install npm:@gotgenes/pi-permission-system
+```
+```bash
+pi install npm:billion-context
+```
+```bash
+pi install npm:@juicesharp/rpiv-todo
+```
+```bash
+pi install npm:@dietrichgebert/ponytail
+```
+```bash
+pi install npm:@narumitw/pi-plan-mode
+```
+```bash
+pi install npm:pi-footer
+```
+```bash
+pi install npm:@juicesharp/rpiv-ask-user-question
+```
+```bash
+pi install npm:@henryqw/pi-bark
+```
+```bash
+pi install npm:pi-mcp-adapter
+```
+
+注意事项：
+- `pi-permission-system` 必须配置权限策略（policy）
+- `pi-permission-classifier` 必须配置配置文件链（config file chain）
+
 ## [opencode-notify](https://github.com/papudding/opencode-notify)
 OpenCode 的 Bark (iOS) 推送通知插件，当智能体需要权限确认、提问或输出完成时推送到手机。
 ```bash
@@ -92,6 +137,12 @@ oc-stats --json export.json # 加载 JSON 导出文件
 ```
 
 ## Skills
+
+### [archify](https://github.com/tt-a1i/archify)
+Agent Skill，将想法、计划或代码库转换为可交互的架构图，支持 Claude Code、Codex、OpenCode 等。
+```bash
+npx skills add tt-a1i/archify -g
+```
 
 ### [comet](https://github.com/rpamis/comet)
 可恢复的长任务工作流与 Skill 平台，支持 Native/Classic 双模式 Spec 驱动开发和 Skill 创建、评估、发布。
